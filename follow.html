@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Follow/X</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <main class="flex flex-row bg-black relative text-white h-[200vh] lg:h-[235vh] w-full">
         <div
@@ -52,7 +54,14 @@
                 <p class="lg:flex hidden text-xl">Notifications</p>
             </a>
             <a href="follow.html" class="flex flex-row gap-6">
-                <svg viewBox="0 0 24 24" aria-hidden="true" class="w-[1.7rem] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"><g><path fill="currentColor" d="M21 5v3h3v2h-3v3h-2v-3h-3V8h3V5h2zM10 2C7.791 2 6 3.79 6 6s1.791 4 4 4 4-1.79 4-4-1.791-4-4-4zm0 9c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11z"></path></g></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-[1.7rem] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                    <g>
+                        <path fill="currentColor"
+                            d="M21 5v3h3v2h-3v3h-2v-3h-3V8h3V5h2zM10 2C7.791 2 6 3.79 6 6s1.791 4 4 4 4-1.79 4-4-1.791-4-4-4zm0 9c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11z">
+                        </path>
+                    </g>
+                </svg>
                 <p class="lg:flex hidden font-bold text-xl">Follow</p>
             </a>
             <a href="chat.html" class="flex flex-row gap-6">
@@ -171,15 +180,181 @@
                     </g>
                 </svg>
             </div>
-            <div class="flex flex-row justify-between text-sm md:text-base lg:text-lg mt-8 px-[7vw] font-[600] border-b pb-0 border-gray-600">
+            <div
+                class="flex flex-row justify-between text-sm md:text-base lg:text-lg mt-8 px-[7vw] font-[600] border-b pb-0 border-gray-600">
                 <a href="#" class="pb-4 px-4 border-b-4 border-blue-400 text-white">Who to follow</a>
                 <a href="#" class="pb-4 text-gray-600">Creators for you</a>
             </div>
-            <div class="flex flex-col gap-3 mt-8 items-center">
-                <h2 class="text-xl md:text-2xl lg:text-3xl w-[50vw] md:w-[30vw] lg:w-[23vw] font-bold text-white">Nothing to see here — yet</h2>
-                <h3 class="text-base text-gray-600 w-[50vw] md:w-[30vw] lg:w-[23vw]">From likes to reposts and a whole lot more, this is where all the action happens.</h3>
+            <div class="flex flex-col mt-4 pl-5 gap-6">
+                <h2 class="text-xl text-white font-bold">
+                    Suggested for you
+                </h2>
+                <a href="#" class="flex flex-col gap-0">
+                    <div class="flex flex-row justify-between pr-8">
+                        <div class="flex flex-row gap-2 items-center">
+                            <img src="./imgs/dabe.png" alt="DABE" class="rounded-full w-[9vw] md:w-[5.2vw] lg:w-[3vw]">
+                            <div class="flex flex-col lg:gap-0 text-blue-500">
+                                <div class="flex flex-row gap-0">
+                                    <p class="text-base text-white font-bold">Dabe Keros</p>
+                                    <svg viewBox="0 0 22 22" aria-label="Verified account" role="img"
+                                        class="h-[2.6vh] md:h-[2vh] lg:h-[2.6vh] self-end w-[3vw] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i"
+                                        data-testid="icon-verified">
+                                        <g>
+                                            <path fill="currentColor"
+                                                d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <p class="font-normal text-gray-600 text-base">@DabeKeros</p>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-white text-black py-1 h-[3.5vh] lg:h-[4.5vh] px-4 rounded-3xl font-[600] mt-2">Follow</button>
+                    </div>
+                    <p class="text-sm lg:text-base pl-[10.8vw] pt-1 lg:pt-0 md:pl-[6vw] lg:pl-[3.5vw] pr-4">Insights on
+                        UX, UI, and digital
+                        experiences that elevate the art of human connections.</p>
+                </a>
+                <a href="#" class="flex flex-col gap-0">
+                    <div class="flex flex-row justify-between pr-8">
+                        <div class="flex flex-row gap-2 items-center">
+                            <img src="./imgs/pratham.png" alt="PRATHAM PRASOON"
+                                class="rounded-full w-[9vw] md:w-[5.2vw] lg:w-[3vw]">
+                            <div class="flex flex-col gap-0 lg:gap-0 text-blue-500">
+                                <div class="flex flex-row gap-0">
+                                    <p class="text-base text-white font-bold">Rahu Prasoon</p>
+                                    <svg viewBox="0 0 22 22" aria-label="Verified account" role="img"
+                                        class="h-[2.6vh] md:h-[2vh] lg:h-[2.6vh] self-end w-[3vw] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i"
+                                        data-testid="icon-verified">
+                                        <g>
+                                            <path fill="currentColor"
+                                                d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <p class="font-normal text-gray-600 text-base">@RahuPrasoon</p>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-white lg:text-base self-start text-sm text-black py-1 h-[3.5vh] lg:h-[4.5vh] px-4 rounded-3xl font-[600] mt-2">Follow</button>
+                    </div>
+                    <p class=" pl-[10.8vw] pt-1 lg:pt-0 md:pl-[6vw] lg:pl-[3.5vw] pr-4">Spending too much time in front
+                        of the computer since 2004. I study math, invest in companies and build things.</p>
+                </a>
+                <a href="#" class="flex flex-col gap-0">
+                    <div class="flex flex-row justify-between pr-8">
+                        <div class="flex flex-row gap-2 items-center">
+                            <img src="./imgs/fik.png" alt="ANDREA BIZOTTO"
+                                class="rounded-full w-[9vw] md:w-[5.2vw] lg:w-[3vw]">
+                            <div class="flex flex-col gap-0 text-blue-500">
+                                <div class="flex flex-row gap-0">
+                                    <p class="text-base text-white font-bold">Andy Bizotto</p>
+                                    <svg viewBox="0 0 22 22" aria-label="Verified account" role="img"
+                                        class="h-[2.6vh] md:h-[2vh] lg:h-[2.6vh] self-end w-[3vw] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i"
+                                        data-testid="icon-verified">
+                                        <g>
+                                            <path fill="currentColor"
+                                                d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <p class="font-normal text-gray-600 text-base">@AndyBizotto</p>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-white text-black py-1 pb-2 h-[3.5vh] lg:h-[4.5vh] px-4 rounded-3xl font-[600] mt-2">Follow</button>
+                    </div>
+                    <p class="text-sm lg:text-base pl-[10.8vw] pt-1 lg:pt-0 md:pl-[6vw] lg:pl-[3.5vw] pr-4">Flutter GDE
+                        ❖ I share tips about Dart & Flutter app development. Get my latest Flutter tips, articles, and
+                        resources. </p>
+                </a>
+                <a href="#" class="flex flex-col gap-0">
+                    <div class="flex flex-row justify-between pr-8">
+                        <div class="flex flex-row gap-2 items-center">
+                            <img src="./imgs/sundarpichai.webp" alt="SUNDAR PICHAI"
+                                class="rounded-full w-[9vw] md:w-[5.2vw] lg:w-[3vw]">
+                            <div class="flex flex-col lg:gap-0 text-blue-500">
+                                <div class="flex flex-row gap-0">
+                                    <p class="text-base text-white font-bold">Sundar Pichai</p>
+                                    <svg viewBox="0 0 22 22" aria-label="Verified account" role="img"
+                                        class="h-[2.6vh] md:h-[2vh] lg:h-[2.6vh] self-end w-[3vw] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i"
+                                        data-testid="icon-verified">
+                                        <g>
+                                            <path fill="currentColor"
+                                                d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <p class="font-normal text-gray-600 text-base">@SundarPichai</p>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-white text-black py-1 h-[3.5vh] lg:h-[4.5vh] px-4 rounded-3xl font-[600] mt-2">Follow</button>
+                    </div>
+                    <p class="text-sm lg:text-base pl-[10.8vw] pt-1 lg:pt-0 md:pl-[6vw] lg:pl-[3.5vw] pr-4">CEO, Google
+                        and Alphabet </p>
+                </a>
+                <a href="#" class="flex flex-col gap-0">
+                    <div class="flex flex-row justify-between pr-8">
+                        <div class="flex flex-row gap-2 items-center">
+                            <img src="./imgs/ux.png" alt="UX MATTERS"
+                                class="rounded-full w-[9vw] md:w-[5.2vw] lg:w-[3vw]">
+                            <div class="flex flex-col gap-0 text-blue-500">
+                                <div class="flex flex-row gap-0">
+                                    <p class="text-base text-white font-bold">UXMatters</p>
+                                    <svg viewBox="0 0 22 22" aria-label="Verified account" role="img"
+                                        class="h-[2.6vh] md:h-[2vh] lg:h-[2.6vh] self-end w-[3vw] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i"
+                                        data-testid="icon-verified">
+                                        <g>
+                                            <path fill="currentColor"
+                                                d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <p class="font-normal text-gray-600 text-base">@UXMatters</p>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-white text-black py-1 h-[3.5vh] lg:h-[4.5vh] px-4 rounded-3xl font-[600] mt-2">Follow</button>
+                    </div>
+                    <p class="text-sm lg:text-base pl-[10.8vw] pt-1 lg:pt-0 md:pl-[6vw] lg:pl-[3.5vw] pr-4">Web magazine
+                        about user experience matters, providing insights and inspiration for the user experience
+                        community </p>
+                </a>
+                <a href="#" class="flex flex-col gap-0">
+                    <div class="flex flex-row justify-between pr-8">
+                        <div class="flex flex-row gap-2 items-center">
+                            <img src="./imgs/fabio.png" alt="GEORGE MOLLER"
+                                class="rounded-full w-[9vw] md:w-[5.2vw] lg:w-[3vw]">
+                            <div class="flex flex-col gap-0 text-blue-500">
+                                <div class="flex flex-row gap-0">
+                                    <p class="text-base text-white font-bold">George Moller</p>
+                                    <svg viewBox="0 0 22 22" aria-label="Verified account" role="img"
+                                        class="h-[2.6vh] md:h-[2vh] lg:h-[2.6vh] self-end w-[3vw] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i"
+                                        data-testid="icon-verified">
+                                        <g>
+                                            <path fill="currentColor"
+                                                d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <p class="font-normal text-gray-600 text-base">@GeorgeMoller</p>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-white text-black py-1 h-[3.5vh] lg:h-[4.5vh] px-4 rounded-3xl font-[600] mt-2">Follow</button>
+                    </div>
+                    <p class="text-sm lg:text-base pl-[10.8vw] pt-1 lg:pt-0 md:pl-[6vw] lg:pl-[3.5vw] pr-4">Staff Front
+                        End Engineer at <span class="text-blue-500">@shopify</span>. Learning, building, and sharing my journey.</p>
+                </a>
             </div>
-              
+
         </div>
         <div class="rightbar flex flex-col gap-4 py-4 fixed top-0 left-[72vw] lg:flex hidden w-[30vw]">
             <div class="flex flex-row gap-2 border border-gray-600 pl-5 py-[0.2vh] rounded-3xl w-[23vw] text-gray-600">
@@ -265,7 +440,8 @@
                             </p>
                         </div>
                     </a>
-                    <button class="self-center  bg-white text-black px-4 h-[4.8vh] w-[6vw] rounded-3xl font-[600]">Follow</button>
+                    <button
+                        class="self-center  bg-white text-black px-4 h-[4.8vh] w-[6vw] rounded-3xl font-[600]">Follow</button>
                 </div>
                 <div class="flex flex-row justify-between">
                     <a href="#" class="flex flex-row items-center gap-3">
@@ -276,11 +452,13 @@
                             </p>
                         </div>
                     </a>
-                    <button class="self-center  bg-white text-black px-4 h-[4.8vh] w-[6vw] rounded-3xl font-[600]">Follow</button>
+                    <button
+                        class="self-center  bg-white text-black px-4 h-[4.8vh] w-[6vw] rounded-3xl font-[600]">Follow</button>
                 </div>
                 <a href="#" class="text-blue-600">Show More</a>
             </div>
         </div>
     </main>
 </body>
+
 </html>
