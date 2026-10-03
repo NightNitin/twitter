@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore/X</title>
+    <title>Notifications/X</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body>
     <main class="flex flex-row bg-black relative text-white h-[200vh] lg:h-[235vh] w-full">
         <div
@@ -40,18 +38,11 @@
                         </path>
                     </g>
                 </svg>
-                <p class="lg:flex hidden text-xl font-bold">Explore</p>
+                <p class="lg:flex hidden text-xl">Explore</p>
             </a>
             <a href="notify.html" class="flex flex-row gap-6">
-                <svg viewBox="0 0 24 24" aria-hidden="true"
-                    class="w-[1.7rem] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
-                    <g>
-                        <path fill="currentColor"
-                            d="M19.993 9.042C19.48 5.017 16.054 2 11.996 2s-7.49 3.021-7.999 7.051L2.866 18H7.1c.463 2.282 2.481 4 4.9 4s4.437-1.718 4.9-4h4.236l-1.143-8.958zM12 20c-1.306 0-2.417-.835-2.829-2h5.658c-.412 1.165-1.523 2-2.829 2zm-6.866-4l.847-6.698C6.364 6.272 8.941 4 11.996 4s5.627 2.268 6.013 5.295L18.864 16H5.134z">
-                        </path>
-                    </g>
-                </svg>
-                <p class="lg:flex hidden text-xl">Notifications</p>
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="w-[1.7rem] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"><g><path fill="currentColor" d="M11.996 2c-4.062 0-7.49 3.021-7.999 7.051L2.866 18H7.1c.463 2.282 2.481 4 4.9 4s4.437-1.718 4.9-4h4.236l-1.143-8.958C19.48 5.017 16.054 2 11.996 2zM9.171 18h5.658c-.412 1.165-1.523 2-2.829 2s-2.417-.835-2.829-2z"></path></g></svg>
+                <p class="lg:flex hidden font-bold text-xl">Notifications</p>
             </a>
             <a href="follow.html" class="flex flex-row gap-6">
                 <svg viewBox="0 0 24 24" aria-hidden="true"
@@ -168,22 +159,10 @@
         </div>
         <div
             class="content pl-[20vw] pr-2 lg:pr-0 lg:pl-[28vw] w-full lg:w-[70vw] border-r border-gray-700 flex flex-col">
-            <div class="flex flex-row justify-between items-center text-white mr-[6vw] lg:mr-[2vw]">
-                <div
-                    class="flex flex-row items-center w-4/6 lg:w-[30vw] gap-2 text-gray-400 border border-gray-700 rounded-full mt-[2vh] ml-[4vh] py-2 px-4">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"
-                        class="w-[3vw] lg:w-[1.2vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1tjplnt r-1bwzh9t r-10ptun7 r-2dysd3 r-1janqcz">
-                        <g>
-                            <path fill="currentColor"
-                                d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z">
-                            </path>
-                        </g>
-                    </svg>
-                    <input type="text" name="search" id="search" placeholder="Search"
-                        class="text-sm lg:text-base bg-black text-gray-600">
-                </div>
+            <div class="flex mx-6 items-center mt-4 flex-row justify-between text-white">
+                <h2 class="text-xl font-bold">Notifications</h2>
                 <svg viewBox="0 0 24 24" aria-hidden="true"
-                    class="hover:cursor-pointer pt-5 lg:pt-3 w-[4vw] md:w-[3.5vw] lg:w-[1.5vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03"
+                    class="hover:cursor-pointer w-[4.3vw] md:w-[2.5vw] lg:w-[1.4vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03"
                     style="color: rgb(239, 243, 244);">
                     <g>
                         <path fill="currentColor"
@@ -192,153 +171,29 @@
                     </g>
                 </svg>
             </div>
-            <div class="w-full border-b pb-0 border-gray-600">
-                <div
-                    class="flex flex-row gap-4 justify-between text-gray-600 mt-6 ml-[8vw] lg:ml-[2.5vw] lg:text-lg font-[600] mr-[8vw] lg:mr-[3vw]">
-                    <a href="#" class="text-white border-b-4 border-blue-400 pb-4">Explore</a>
-                    <a href="#">Trending</a>
-                    <a href="#">News</a>
-                    <a href="#" class="hidden md:flex">Sports</a>
-                    <a href="#" class="hidden lg:flex">Entertainment</a>
-                </div>
+            <div class="flex flex-row justify-between text-base lg:text-lg mt-8 px-[7vw] font-[600] border-b pb-0 border-gray-600">
+                <a href="#" class="pb-4 px-4 border-b-4 border-blue-400 text-white">All</a>
+                <a href="#" class="pb-4 text-gray-600">Mentions</a>
             </div>
-            <div class="pl-4 mt-6 border-b border-gray-600 pb-6 flex flex-col gap-6 text-white">
-                <h3 class="text-lg md:text-xl font-bold">Today's News</h3>
-                <a href="#" class="flex flex-col gap-2">
-                    <p class="text-lg lg:text-lg font-bold">Google DeepMind Unveils Gemini 4 Argon for Complex AI
-                        Workflows</p>
-                    <div class="flex flex-row gap-1">
-                        <div class="flex flex-row">
-                            <img src="./imgs/sundarpichai.webp" alt="SUNDAR PICHAI"
-                                class="w-[6vw] h-[6vw] md:w-[4vw] md:h-[4vw] lg:w-[2vw] lg:h-[2vw] rounded-full z-40">
-                            <img src="./imgs/google.jpeg" alt="GOOGLE"
-                                class="w-[6vw] h-[6vw] md:w-[4vw] md:h-[4vw] lg:w-[2vw] lg:h-[2vw] rounded-2xl z-30 relative right-4">
-                            <img src="./imgs/adn.png" alt="ADN"
-                                class="w-[6vw] h-[6vw] md:w-[4vw] md:h-[4vw] lg:w-[2vw] lg:h-[2vw] rounded-full z-20 relative right-7">
-                        </div>
-                        <p class="text-gray-600 relative right-6">9 hours ago <b>·</b> News <b>·</b> 54.7k posts</p>
-                    </div>
-                </a>
-                <a href="#" class="flex flex-col gap-2">
-                    <p class="text-lg lg:text-lg font-bold">India Names Teen Sensation Sooryavanshi in Asian Games
-                        Cricket Semis</p>
-                    <div class="flex flex-row gap-1">
-                        <div class="flex flex-row">
-                            <img src="./imgs/surya.jpeg" alt="SURYA"
-                                class="w-[6vw] h-[6vw] md:w-[4vw] md:h-[4vw] lg:w-[2vw] lg:h-[2vw] rounded-full z-40">
-                            <img src="./imgs/adn.png" alt="Adn"
-                                class="w-[6vw] h-[6vw] md:w-[4vw] md:h-[4vw] lg:w-[2vw] lg:h-[2vw] rounded-2xl z-30 relative right-4">
-                            <img src="./imgs/amazon.png" alt="Amazon"
-                                class="w-[6vw] h-[6vw] md:w-[4vw] md:h-[4vw] lg:w-[2vw] lg:h-[2vw] rounded-full z-20 relative right-7">
-                        </div>
-                        <p class="text-gray-600 relative right-6">Trending Now <b>·</b> Sports <b>·</b> 3.5k posts</p>
-                    </div>
-                </a>
-                <a href="#" class="flex flex-col gap-2">
-                    <p class="text-lg lg:text-lg font-bold">Drishyam: The Conclusion Advance Bookings Surge Ahead of
-                        October 2 Release</p>
-                    <div class="flex flex-row gap-1">
-                        <div class="flex flex-row">
-                            <img src="./imgs/ajay.webp" alt="AJAY DEVGAN"
-                                class="w-[6vw] h-[6vw] md:w-[4vw] md:h-[4vw] lg:w-[2vw] lg:h-[2vw] rounded-full z-40">
-                            <img src="./imgs/surya.jpeg" alt="SURYA"
-                                class="w-[6vw] h-[6vw] md:w-[4vw] md:h-[4vw] lg:w-[2vw] lg:h-[2vw] rounded-2xl z-30 relative right-4">
-                            <img src="./imgs/adn.png" alt="ADN"
-                                class="w-[6vw] h-[6vw] md:w-[4vw] md:h-[4vw] lg:w-[2vw] lg:h-[2vw] rounded-full z-20 relative right-7">
-                        </div>
-                        <p class="text-gray-600 relative right-6">Trending Now <b>·</b> Entertainment <b>·</b> 48.1k
-                            posts</p>
-                    </div>
-                </a>
+            <div class="flex flex-col gap-3 mt-8 items-center">
+                <h2 class="text-xl md:text-2xl lg:text-3xl w-[50vw] md:w-[30vw] lg:w-[23vw] font-bold text-white">Nothing to see here — yet</h2>
+                <h3 class="text-base text-gray-600 w-[50vw] md:w-[30vw] lg:w-[23vw]">From likes to reposts and a whole lot more, this is where all the action happens.</h3>
             </div>
-            <div class="flex pl-4 mt-4 border-b border-gray-600 pb-4 flex-col gap-4">
-                <a href="#" class="flex flex-row justify-between text-gray-600 font-[600] pr-4">
-                    <div class="flex flex-col">
-                        <p class="text-sm lg:text-base text-gray-600">Business & finance <b>·</b> Trending </p>
-                        <p class="text-white text-base lg:text-lg">Season 0</p>
-                    </div>
-                    <svg viewBox="0 0 24 24" aria-hidden="true"
-                        class="w-[3.9vw] md:w-[2.8vw] lg:w-[1.5vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
-                        <g>
-                            <path fill="currentColor"
-                                d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
-                            </path>
-                        </g>
-                    </svg>
-                </a>
-                <a href="#" class="flex flex-row justify-between text-gray-600 font-[600] pr-4">
-                    <div class="flex flex-col">
-                        <p class="text-sm lg:text-base text-gray-600">Politics <b>·</b> Trending </p>
-                        <p class="text-white text-base lg:text-lg">#EKDinEkGhantaEkSaath</p>
-                    </div>
-                    <svg viewBox="0 0 24 24" aria-hidden="true"
-                        class="w-[3.9vw] md:w-[2.8vw] lg:w-[1.5vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
-                        <g>
-                            <path fill="currentColor"
-                                d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
-                            </path>
-                        </g>
-                    </svg>
-                </a>
-                <a href="#" class="flex flex-row justify-between text-gray-600 font-[600] pr-4">
-                    <div class="flex flex-col">
-                        <p class="text-sm lg:text-base text-gray-600">Trending in India </p>
-                        <p class="text-white text-base lg:text-lg">#HBD_SITARAMPOSWAL</p>
-                    </div>
-                    <svg viewBox="0 0 24 24" aria-hidden="true"
-                        class="w-[3.9vw] md:w-[2.8vw] lg:w-[1.5vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
-                        <g>
-                            <path fill="currentColor"
-                                d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
-                            </path>
-                        </g>
-                    </svg>
-                </a>
-                <a href="#" class="flex flex-row justify-between text-gray-600 font-[600] pr-4">
-                    <div class="flex flex-col">
-                        <p class="text-sm lg:text-base text-gray-600">Politics <b>·</b> Trending </p>
-                        <p class="text-white text-base lg:text-lg">Captain Smit Machchhar</p>
-                    </div>
-                    <svg viewBox="0 0 24 24" aria-hidden="true"
-                        class="w-[3.9vw] md:w-[2.8vw] lg:w-[1.5vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
-                        <g>
-                            <path fill="currentColor"
-                                d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
-                            </path>
-                        </g>
-                    </svg>
-                </a>
-                <a href="#" class="flex flex-row justify-between text-gray-600 font-[600] pr-4">
-                    <div class="flex flex-col">
-                        <p class="text-sm lg:text-base text-gray-600">Trending in India </p>
-                        <p class="text-white text-base lg:text-lg">Meenu</p>
-                    </div>
-                    <svg viewBox="0 0 24 24" aria-hidden="true"
-                        class="w-[3.9vw] md:w-[2.8vw] lg:w-[1.5vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
-                        <g>
-                            <path fill="currentColor"
-                                d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
-                            </path>
-                        </g>
-                    </svg>
-                </a>
-                <a href="#" class="flex flex-row justify-between text-gray-600 font-[600] pr-4">
-                    <div class="flex flex-col">
-                        <p class="text-sm lg:text-base text-gray-600">Sports <b>·</b> Trending </p>
-                        <p class="text-white text-base lg:text-lg">Ishan Kishan</p>
-                    </div>
-                    <svg viewBox="0 0 24 24" aria-hidden="true"
-                        class="w-[3.9vw] md:w-[2.8vw] lg:w-[1.5vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
-                        <g>
-                            <path fill="currentColor"
-                                d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
-                            </path>
-                        </g>
-                    </svg>
-                </a>
-            </div>
+              
         </div>
-        <div class="rightbar py-4 fixed top-1 left-[72vw] lg:flex lg:flex-col lg:gap-4 hidden w-[30vw]">
+        <div class="rightbar flex flex-col gap-4 py-4 fixed top-0 left-[72vw] lg:flex hidden w-[30vw]">
+            <div class="flex flex-row gap-2 border border-gray-600 pl-5 py-[0.2vh] rounded-3xl w-[23vw] text-gray-600">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-[1.5vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                    <g>
+                        <path fill="currentColor"
+                            d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z">
+                        </path>
+                    </g>
+                </svg>
+                <input type="text" name="search" id="search" placeholder="Search"
+                    class="focus:outline outline-blue-600 outline-offset-2  rounded-3xl w-[20vw] h-[5vh] bg-black">
+            </div>
             <div class="flex flex-col w-[23vw] px-4 rounded-xl py-2 border border-gray-600 gap-2">
                 <div class="flex flex-row justify-between">
                     <h3 class="text-lg md:text-xl font-bold">Today's News</h3>
@@ -423,21 +278,9 @@
                     </a>
                     <button class="self-center  bg-white text-black px-4 h-[4.8vh] w-[6vw] rounded-3xl font-[600]">Follow</button>
                 </div>
-                <div class="flex flex-row justify-between">
-                    <a href="#" class="flex flex-row items-center gap-3">
-                        <img src="./imgs/devgan.png" alt="LAUGH" class="w-[3vw] h-[3vw] rounded-full">
-                        <div class="flex flex-col">
-                            <p class="text-base font-bold leading-[1.2rem]">Devgan Bhai <br>
-                                <span class="text-gray-600 font-normal">@devganbhai</span>
-                            </p>
-                        </div>
-                    </a>
-                    <button class="self-center  bg-white text-black px-4 h-[4.8vh] w-[6vw] rounded-3xl font-[600]">Follow</button>
-                </div>
-                <a href="#" class="text-blue-600 pb-1">Show More</a>
+                <a href="#" class="text-blue-600">Show More</a>
             </div>
         </div>
     </main>
 </body>
-
 </html>
