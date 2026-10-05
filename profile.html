@@ -1,11 +1,554 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile/X</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
+    <main class="flex flex-row bg-black relative text-white h-[200vh] lg:h-[235vh] w-full">
+        <div
+            class="leftbar flex flex-col border-r bg-black border-gray-700 gap-2 fixed top-0 pl-[5vw] md:pl-[9vw] pt-6 lg:pt-3 w-[20vw] lg:w-[28vw] text-white h-[100vh]">
+            <svg viewBox="0 0 24 24" aria-hidden="true"
+                class="hover:bg-[grey]/20 rounded-3xl pl-3 pr-2 py-2 w-[2.8rem] lg:w-[3.4vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                <g>
+                    <path fill="currentColor"
+                        d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z">
+                    </path>
+                </g>
+            </svg>
+            <a href="index.html"
+                class="hover:bg-[grey]/20 rounded-3xl pl-3 pr-2 py-2 w-[12vw] md:w-[6vw] lg:w-[9vw] flex flex-row gap-4">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-[1.7rem] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                    <g>
+                        <path fill="currentColor"
+                            d="M20 9.838c0-.502-.25-.97-.668-1.248l-6.5-4.333c-.504-.336-1.16-.336-1.664 0l-6.5 4.333C4.251 8.868 4 9.336 4 9.838V18.5c0 .828.672 1.5 1.5 1.5h3v-3.5c0-1.933 1.567-3.5 3.5-3.5s3.5 1.567 3.5 3.5V20h3c.828 0 1.5-.672 1.5-1.5V9.838zm2 8.662c0 1.933-1.567 3.5-3.5 3.5h-5v-5.5c0-.829-.672-1.5-1.5-1.5s-1.5.671-1.5 1.5V22h-5C3.567 22 2 20.433 2 18.5V9.838c0-1.17.585-2.263 1.559-2.912l6.5-4.333c1.175-.784 2.707-.784 3.882 0l6.5 4.333C21.415 7.575 22 8.668 22 9.838V18.5z">
+                        </path>
+                    </g>
+                </svg>
+                <p class="lg:flex hidden text-xl">Home</p>
+            </a>
+            <a href="search.html"
+                class="hover:bg-[grey]/20 rounded-3xl pl-3 pr-2 py-2 w-[12vw] md:w-[6vw] lg:w-[9.2vw] flex flex-row gap-4">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-[1.7rem] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                    <g>
+                        <path fill="currentColor"
+                            d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z">
+                        </path>
+                    </g>
+                </svg>
+                <p class="lg:flex hidden text-xl">Explore</p>
+            </a>
+            <a href="notify.html"
+                class="hover:bg-[grey]/20 rounded-3xl pl-3 pr-2 py-2 w-[12vw] md:w-[6vw] lg:w-[12.8vw] flex flex-row gap-4">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-[1.7rem] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                    <g>
+                        <path fill="currentColor"
+                            d="M19.993 9.042C19.48 5.017 16.054 2 11.996 2s-7.49 3.021-7.999 7.051L2.866 18H7.1c.463 2.282 2.481 4 4.9 4s4.437-1.718 4.9-4h4.236l-1.143-8.958zM12 20c-1.306 0-2.417-.835-2.829-2h5.658c-.412 1.165-1.523 2-2.829 2zm-6.866-4l.847-6.698C6.364 6.272 8.941 4 11.996 4s5.627 2.268 6.013 5.295L18.864 16H5.134z">
+                        </path>
+                    </g>
+                </svg>
+                <p class="lg:flex hidden text-xl">Notifications</p>
+            </a>
+            <a href="follow.html"
+                class="hover:bg-[grey]/20 rounded-3xl pl-3 pr-2 py-2 w-[12vw] md:w-[6vw] lg:w-[9vw] flex flex-row gap-4">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-[1.7rem] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                    <g>
+                        <path fill="currentColor"
+                            d="M10 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM6 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4zm13 4v3h2v-3h3V8h-3V5h-2v3h-3v2h3zM3.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C13.318 13.65 11.838 13 10 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C5.627 11.85 7.648 11 10 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H1.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46z">
+                        </path>
+                    </g>
+                </svg>
+                <p class="lg:flex hidden text-xl">Follow</p>
+            </a>
+            <a href="chat.html"
+                class="hover:bg-[grey]/20 rounded-3xl pl-3 pr-2 py-2 w-[12vw] md:w-[6vw] lg:w-[9vw] flex flex-row gap-4">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-[1.7rem] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                    <g>
+                        <path fill="currentColor"
+                            d="M20.7 11.7c0-4.48-3.844-8.2-8.699-8.2-4.854 0-8.698 3.72-8.698 8.2v.015l-.001.014c-.02.667.09 1.225.25 1.767.083.28.176.545.276.839.098.285.202.595.288.918.177.663.284 1.401.156 2.271-.086.582-.274 1.191-.582 1.855 1.264.375 2.55.053 4.013-.599l.455-.203.437.242c1.07.594 1.917 1.08 3.406 1.08 4.855 0 8.7-3.72 8.7-8.199zm2 0c0 5.683-4.84 10.2-10.699 10.2-1.784 0-2.96-.555-3.95-1.095-1.876.768-4.02 1.2-6.245-.075l-.885-.505.524-.875c.54-.904.77-1.581.848-2.118.078-.526.02-.98-.11-1.463-.066-.25-.15-.502-.247-.788-.095-.277-.204-.59-.301-.92-.199-.674-.36-1.449-.332-2.39C1.322 6.002 6.154 1.5 12.002 1.5c5.859 0 10.7 4.518 10.7 10.2z">
+                        </path>
+                    </g>
+                </svg>
+                <p class="lg:flex hidden text-xl">Chat</p>
+            </a>
+            <a href="grok.html"
+                class="hover:bg-[grey]/20 rounded-3xl pl-3 pr-2 py-2 w-[12vw] md:w-[6vw] lg:w-[9vw] flex flex-row gap-4">
+                <svg viewBox="0 0 33 32" aria-hidden="true"
+                    class="w-[1.7rem] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                    <g>
+                        <path fill="currentColor"
+                            d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
+                        </path>
+                    </g>
+                </svg>
+                <p class="lg:flex hidden text-xl">Grok</p>
+            </a>
+            <a href="history.html"
+                class="hover:bg-[grey]/20 rounded-3xl pl-3 pr-2 py-2 w-[12vw] md:w-[6vw] lg:w-[9vw] flex flex-row gap-4">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-[1.7rem] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                    <g>
+                        <path fill="currentColor"
+                            d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z">
+                        </path>
+                    </g>
+                </svg>
+                <p class="lg:flex hidden text-xl">History</p>
+            </a>
+            <a href="#"
+                class="hover:bg-[grey]/20 rounded-3xl pl-3 pr-2 py-2 w-[12vw] md:w-[6vw] lg:w-[11vw] flex flex-row gap-4">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-[1.7rem] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-1q142lx r-1kihuf0 r-1472mwg r-di8nfa r-lrsllp"
+                    data-testid="icon">
+                    <g>
+                        <path fill="currentColor"
+                            d="M8.52 3.59c.8-1.1 2.04-1.84 3.48-1.84s2.68.74 3.49 1.84c1.34-.21 2.74.14 3.76 1.16s1.37 2.42 1.16 3.77c1.1.8 1.84 2.04 1.84 3.48s-.74 2.68-1.84 3.48c.21 1.34-.14 2.75-1.16 3.77s-2.42 1.37-3.76 1.16c-.8 1.1-2.05 1.84-3.49 1.84s-2.68-.74-3.48-1.84c-1.34.21-2.75-.14-3.77-1.16-1.01-1.02-1.37-2.42-1.16-3.77-1.09-.8-1.84-2.04-1.84-3.48s.75-2.68 1.84-3.48c-.21-1.35.14-2.75 1.16-3.77s2.43-1.37 3.77-1.16zm3.48.16c-.85 0-1.66.53-2.12 1.43l-.38.77-.82-.27c-.96-.32-1.91-.12-2.51.49-.6.6-.8 1.54-.49 2.51l.27.81-.77.39c-.9.46-1.43 1.27-1.43 2.12s.53 1.66 1.43 2.12l.77.39-.27.81c-.31.97-.11 1.91.49 2.51.6.61 1.55.81 2.51.49l.82-.27.38.77c.46.9 1.27 1.43 2.12 1.43s1.66-.53 2.12-1.43l.39-.77.82.27c.96.32 1.9.12 2.51-.49.6-.6.8-1.55.48-2.51l-.26-.81.76-.39c.91-.46 1.43-1.27 1.43-2.12s-.52-1.66-1.43-2.12l-.77-.39.27-.81c.32-.97.12-1.91-.48-2.51-.61-.61-1.55-.81-2.51-.49l-.82.27-.39-.77c-.46-.9-1.27-1.43-2.12-1.43zm4.74 5.68l-6.2 6.77-3.74-3.74 1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36z">
+                        </path>
+                    </g>
+                </svg>
+                <p class="lg:flex hidden text-xl">Premium</p>
+            </a>
+            <a href="profile.html"
+                class="hover:bg-[grey]/20 rounded-3xl pl-3 pr-2 py-2 w-[12vw] md:w-[6vw] lg:w-[9vw] flex flex-row gap-4">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-[1.7rem] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                    <g>
+                        <path fill="currentColor"
+                            d="M17.863 13.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H3.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46C7.627 11.85 9.648 11 12 11s4.373.85 5.863 2.44zM12 2C9.791 2 8 3.79 8 6s1.791 4 4 4 4-1.79 4-4-1.791-4-4-4z">
+                        </path>
+                    </g>
+                </svg>
+                <p class="lg:flex hidden font-bold text-xl">Profile</p>
+            </a>
+            <a href="#"
+                class="hover:bg-[grey]/20 rounded-3xl pl-3 pr-2 py-2 w-[12vw] md:w-[6vw] lg:w-[9vw] flex flex-row gap-4">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-[1.7rem] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                    <g>
+                        <path fill="currentColor"
+                            d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z">
+                        </path>
+                    </g>
+                </svg>
+                <p class="lg:flex hidden text-xl">More</p>
+            </a>
+            <button
+                class="flex flex-col items-center justify-center lg:hidden bg-white text-black rounded-full w-[9vw] h-[9vw] md:h-[5vw] md:w-[5vw]"><svg
+                    viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-[1.7rem] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1472mwg r-lrsllp"
+                    style="color: rgb(15, 20, 25);">
+                    <g>
+                        <path fill="currrentColor"
+                            d="M10.938 4.5H9.9c-1.136 0-1.929 0-2.546.05-.605.05-.953.143-1.216.277-.564.288-1.023.747-1.31 1.31-.135.264-.228.612-.277 1.218C4.5 7.97 4.5 8.765 4.5 9.9v4.2c0 1.136 0 1.929.05 2.546.05.605.143.953.277 1.216.288.565.747 1.023 1.31 1.31.264.135.612.228 1.217.277.617.05 1.41.051 2.546.051h4.2c1.136 0 1.929 0 2.545-.05.606-.05.954-.143 1.217-.277.565-.288 1.023-.746 1.31-1.31.135-.264.228-.612.277-1.217.05-.617.051-1.41.051-2.546v-1.037h2V14.1c0 1.103.001 1.992-.058 2.709-.06.728-.185 1.368-.487 1.96-.48.941-1.245 1.707-2.185 2.186-.593.302-1.233.428-1.961.488-.718.058-1.606.057-2.71.057H9.9c-1.103 0-1.991.001-2.709-.058-.728-.06-1.368-.185-1.96-.487-.941-.48-1.707-1.245-2.186-2.185-.302-.593-.428-1.233-.487-1.961-.059-.718-.058-1.606-.058-2.71V9.9c0-1.103-.001-1.991.058-2.709.06-.728.185-1.368.487-1.96.48-.941 1.245-1.707 2.185-2.186.593-.302 1.233-.428 1.961-.487.718-.059 1.606-.058 2.71-.058h1.037v2z">
+                        </path>
+                        <path clip-rule="evenodd"
+                            d="M16.293 3.293c1.219-1.219 3.195-1.219 4.414 0 1.219 1.219 1.219 3.195 0 4.414l-5.491 5.491c-.533.533-.89.896-1.31 1.179-.356.24-.742.433-1.148.574-.478.167-.983.234-1.729.341l-2.708.387.387-2.708c.107-.746.174-1.25.34-1.729.142-.405.335-.792.575-1.148.283-.42.646-.777 1.179-1.31l5.491-5.491zm3 1.414c-.438-.438-1.148-.438-1.586 0l-5.491 5.491c-.587.587-.784.79-.934 1.013-.144.214-.26.445-.345.688-.088.254-.131.533-.248 1.354l-.01.067.068-.008c.82-.118 1.1-.161 1.354-.25.243-.084.474-.2.688-.344.223-.15.426-.347 1.013-.934l5.491-5.491c.438-.438.438-1.148 0-1.586z"
+                            fill-rule="evenodd"></path>
+                    </g>
+                </svg></button>
+            <button
+                class="lg:flex flex-row justify-center hidden bg-white text-black rounded-3xl py-[0.8rem] text-xl font-[600] w-[14vw]">Post</button>
+            <a href="profile.html"
+                class="hover:bg-[grey]/20 rounded-3xl pl-3 pr-2 py-2 w-[12vw] md:w-[12vw] lg:w-[15vw] flex lg:flex-row flex-col lg:items-center gap-2 fixed bottom-12 lg:bottom-4">
+                <div
+                    class="bg-orange-500 w-[9vw] px-4 h-[9vw] md:h-[5vw] md:w-[5vw] lg:w-[3vw] lg:h-[3vw] flex flex-col items-center rounded-full justify-center lg:text-[1.3rem]">
+                    N</div>
+                <div class="hidden lg:flex lg:flex-col">
+                    <p class="font-[600]">Nitin Kumar</p>
+                    <p class="text-gray-500">@NitinKumarOnX</p>
+                </div>
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="hidden lg:flex ml-8 w-[1.3vw] r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i">
+                    <g>
+                        <path fill="currentColor"
+                            d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+
+        </div>
+        <div
+            class="content pl-[20vw] pr-2 lg:pr-0 lg:pl-[28vw] w-full lg:w-[70vw] border-r border-gray-700 flex flex-col">
+            <div class="pl-4 pr-6 pt-2 text-xl flex flex-row items-center justify-between">
+                <div class="flex flex-row items-center gap-4">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                        class="hover:bg-[grey]/20 rounded-full py-0 lg:py-2 px-1 w-[6.2vw] h-[4.2vh] md:w-[4vw] md:h-[3vh] lg:w-[2vw] lg:h-[4.8vh] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03"
+                        style="color: rgb(239, 243, 244);">
+                        <g>
+                            <path fill="currentColor"
+                                d="M7.414 13l5.043 5.04-1.414 1.42L3.586 12l7.457-7.46 1.414 1.42L7.414 11H21v2H7.414z">
+                            </path>
+                        </g>
+                    </svg>
+                    <a href="#" class="flex flex-col">
+                        <p class="font-bold">Nitin Kumar</p>
+                        <p class="text-sm text-gray-600">0 posts</p>
+                    </a>
+                </div>
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="hover:bg-[grey]/20 rounded-full py-0 lg:py-2 px-1 w-[6.2vw] h-[4.2vh] md:w-[4vw] md:h-[3vh] lg:w-[2vw] lg:h-[4.8vh] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03"
+                    style="color: rgb(239, 243, 244);">
+                    <g>
+                        <path fill="currentColor"
+                            d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="mt-2 flex pl-6 flex-col-reverse h-40 md:h-60 bg-gray-500/40">
+                <a href="#"
+                    class="flex flex-row relative top-[6vh] md:top-[7vh] lg:top-[8vh] items-center justify-center w-[20.5vw] h-[20.5vw] lg:w-[8.5vw] lg:h-[8.5vw] px-1 py-1 rounded-full bg-black">
+                    <div
+                        class="hover:bg-orange-600 flex flex-row items-center justify-center w-[19vw] h-[19vw] lg:w-[8vw] lg:h-[8vw] rounded-full bg-orange-500 text-4xl lg:text-6xl md:text-[4.5rem]">
+                        N</div>
+                </a>
+            </div>
+            <div class="flex flex-row-reverse px-6 justify-between">
+
+                <a href="#"
+                    class="hover:bg-[grey]/20 border text-sm md:text-base border-gray-600 mt-3 rounded-3xl flex flex-col justify-center items-center w-[28vw] md:w-[14vw] lg:w-[8vw] font-[600] h-[4vh] md:h-[4vh] lg:h-[5vh]">Edit
+                    Profile
+                </a>
+            </div>
+            <div class="flex flex-col flex-start pl-6 mt-6">
+                <div class="flex flex-row gap-4">
+                    <p class="text-lg md:text-2xl font-bold">Nitin Kumar</p>
+                    <a href="#"
+                        class="hover:bg-[grey]/20 text-blue-400 border text-sm border-gray-600 rounded-3xl flex flex-row justify-center items-center w-[30vw] md:w-[16vw] lg:w-[8vw] font-bold">
+                        <svg viewBox="0 0 22 22" aria-label="Verified account" role="img"
+                            class="w-[4vw] md:w-[2vw] lg:w-[1vw] r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i"
+                            data-testid="icon-verified">
+                            <g>
+                                <path fill="currentColor"
+                                    d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z">
+                                </path>
+                            </g>
+                        </svg>
+                        <p class="text-white text-xs md:text-sm ml-2">Get Verified</p>
+                    </a>
+                </div>
+                <p class="text-sm lg:text-base text-gray-500">@NitinKumarOnX</p>
+
+                <a href="#" class="flex flex-row gap-1 mt-2 text-gray-500">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                        class="w-[4vw] md:w-[2vw] lg:w-[1.5vw] r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1bwzh9t r-1gs4q39">
+                        <g>
+                            <path fill="currentColor"
+                                d="M7 4V3h2v1h6V3h2v1h1.5C19.89 4 21 5.12 21 6.5v12c0 1.38-1.11 2.5-2.5 2.5h-13C4.12 21 3 19.88 3 18.5v-12C3 5.12 4.12 4 5.5 4H7zm0 2H5.5c-.27 0-.5.22-.5.5v12c0 .28.23.5.5.5h13c.28 0 .5-.22.5-.5v-12c0-.28-.22-.5-.5-.5H17v1h-2V6H9v1H7V6zm0 6h2v-2H7v2zm0 4h2v-2H7v2zm4-4h2v-2h-2v2zm0 4h2v-2h-2v2zm4-4h2v-2h-2v2z">
+                            </path>
+                        </g>
+                    </svg>
+                    <p class="text-base hover:underline">Joined May 2026</p>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                        class="w-[4vw] md:w-[2vw] lg:w-[1.5vw] r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd">
+                        <g>
+                            <path fill="currentColor"
+                                d="M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z"></path>
+                        </g>
+                    </svg>
+                </a>
+                <div class="mt-2 flex flex-row gap-2">
+                    <a href="#" class="hover:underline decoration-1">
+                        <p class="text-white">6 <span class="text-gray-600">
+                                Following</span></p>
+                    </a>
+                    <a href="#" class="hover:underline decoration-1">
+                        <p class="text-white">0 <span class="text-gray-600">
+                                Followers</span></p>
+                    </a>
+                </div>
+            </div>
+            <div
+                class="flex flex-row justify-between text-sm md:text-base mt-6 pl-[6vw] pr-[7vw] font-[600] border-b pb-0 border-gray-600">
+                <a href="#" class="pb-4 border-b-4 border-blue-400 text-white">Posts</a>
+                <a href="#" class="pb-4 text-gray-600">Replies</a>
+                <a href="#" class="pb-4 text-gray-600">Reposts</a>
+                <a href="#" class="pb-4 text-gray-600">Media</a>
+            </div>
+            <div class="flex flex-col mt-4 gap-6">
+                <h2 class="text-xl pl-5 text-white font-bold">
+                    Suggested for you
+                </h2>
+                <a href="#" class="pl-5 hover:bg-[grey]/20 pt-4 pb-4 flex flex-col gap-0">
+                    <div class="flex flex-row justify-between pr-8">
+                        <div class="flex flex-row gap-2 items-center">
+                            <img src="./imgs/dabe.png" alt="DABE" class="rounded-full w-[9vw] md:w-[5.2vw] lg:w-[3vw]">
+                            <div class="flex flex-col lg:gap-0 text-blue-500">
+                                <div class="flex flex-row gap-0">
+                                    <p class="text-base text-white font-bold">Dabe Keros</p>
+                                    <svg viewBox="0 0 22 22" aria-label="Verified account" role="img"
+                                        class="h-[2.6vh] md:h-[2vh] lg:h-[2.6vh] self-end w-[3vw] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i"
+                                        data-testid="icon-verified">
+                                        <g>
+                                            <path fill="currentColor"
+                                                d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <p class="font-normal text-gray-600 text-base">@DabeKeros</p>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-white text-black py-1 h-[3.5vh] lg:h-[4.5vh] px-4 rounded-3xl font-[600] mt-2">Follow</button>
+                    </div>
+                    <p class="text-sm lg:text-base pl-[10.8vw] pt-1 lg:pt-0 md:pl-[6vw] lg:pl-[3.5vw] pr-4">Insights on
+                        UX, UI, and digital
+                        experiences that elevate the art of human connections.
+                    </p>
+                </a>
+                <a href="#" class="pl-5 hover:bg-[grey]/20 pt-4 pb-4 flex flex-col gap-0">
+                    <div class="flex flex-row justify-between pr-8">
+                        <div class="flex flex-row gap-2 items-center">
+                            <img src="./imgs/pratham.png" alt="PRATHAM PRASOON"
+                                class="rounded-full w-[9vw] md:w-[5.2vw] lg:w-[3vw]">
+                            <div class="flex flex-col gap-0 lg:gap-0 text-blue-500">
+                                <div class="flex flex-row gap-0">
+                                    <p class="text-base text-white font-bold">Rahu Prasoon</p>
+                                    <svg viewBox="0 0 22 22" aria-label="Verified account" role="img"
+                                        class="h-[2.6vh] md:h-[2vh] lg:h-[2.6vh] self-end w-[3vw] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i"
+                                        data-testid="icon-verified">
+                                        <g>
+                                            <path fill="currentColor"
+                                                d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <p class="font-normal text-gray-600 text-base">@RahuPrasoon</p>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-white lg:text-base self-start text-sm text-black py-1 h-[3.5vh] lg:h-[4.5vh] px-4 rounded-3xl font-[600] mt-2">Follow</button>
+                    </div>
+                    <p class=" pl-[10.8vw] pt-1 lg:pt-0 md:pl-[6vw] lg:pl-[3.5vw] pr-4">Spending too much time in front
+                        of the computer since 2004. I study math, invest in companies and build things.</p>
+                </a>
+                <a href="#" class="pl-5 hover:bg-[grey]/20 pt-4 pb-4 flex flex-col gap-0">
+                    <div class="flex flex-row justify-between pr-8">
+                        <div class="flex flex-row gap-2 items-center">
+                            <img src="./imgs/fik.png" alt="ANDREA BIZOTTO"
+                                class="rounded-full w-[9vw] md:w-[5.2vw] lg:w-[3vw]">
+                            <div class="flex flex-col gap-0 text-blue-500">
+                                <div class="flex flex-row gap-0">
+                                    <p class="text-base text-white font-bold">Andy Bizotto</p>
+                                    <svg viewBox="0 0 22 22" aria-label="Verified account" role="img"
+                                        class="h-[2.6vh] md:h-[2vh] lg:h-[2.6vh] self-end w-[3vw] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i"
+                                        data-testid="icon-verified">
+                                        <g>
+                                            <path fill="currentColor"
+                                                d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <p class="font-normal text-gray-600 text-base">@AndyBizotto</p>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-white text-black py-1 pb-2 h-[3.5vh] lg:h-[4.5vh] px-4 rounded-3xl font-[600] mt-2">Follow</button>
+                    </div>
+                    <p class="text-sm lg:text-base pl-[10.8vw] pt-1 lg:pt-0 md:pl-[6vw] lg:pl-[3.5vw] pr-4">Flutter GDE
+                        ❖ I share tips about Dart & Flutter app development. Get my latest Flutter tips, articles, and
+                        resources. </p>
+                </a>
+                <a href="#" class="pl-5 hover:bg-[grey]/20 pt-4 pb-4 flex flex-col gap-0">
+                    <div class="flex flex-row justify-between pr-8">
+                        <div class="flex flex-row gap-2 items-center">
+                            <img src="./imgs/sundarpichai.webp" alt="SUNDAR PICHAI"
+                                class="rounded-full w-[9vw] md:w-[5.2vw] lg:w-[3vw]">
+                            <div class="flex flex-col lg:gap-0 text-blue-500">
+                                <div class="flex flex-row gap-0">
+                                    <p class="text-base text-white font-bold">Sundar Pichai</p>
+                                    <svg viewBox="0 0 22 22" aria-label="Verified account" role="img"
+                                        class="h-[2.6vh] md:h-[2vh] lg:h-[2.6vh] self-end w-[3vw] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i"
+                                        data-testid="icon-verified">
+                                        <g>
+                                            <path fill="currentColor"
+                                                d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <p class="font-normal text-gray-600 text-base">@SundarPichai</p>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-white text-black py-1 h-[3.5vh] lg:h-[4.5vh] px-4 rounded-3xl font-[600] mt-2">Follow</button>
+                    </div>
+                    <p class="text-sm lg:text-base pl-[10.8vw] pt-1 lg:pt-0 md:pl-[6vw] lg:pl-[3.5vw] pr-4">CEO, Google
+                        and Alphabet </p>
+                </a>
+                <a href="#" class="pl-5 hover:bg-[grey]/20 pt-4 pb-4 flex flex-col gap-0">
+                    <div class="flex flex-row justify-between pr-8">
+                        <div class="flex flex-row gap-2 items-center">
+                            <img src="./imgs/ux.png" alt="UX MATTERS"
+                                class="rounded-full w-[9vw] md:w-[5.2vw] lg:w-[3vw]">
+                            <div class="flex flex-col gap-0 text-blue-500">
+                                <div class="flex flex-row gap-0">
+                                    <p class="text-base text-white font-bold">UXMatters</p>
+                                    <svg viewBox="0 0 22 22" aria-label="Verified account" role="img"
+                                        class="h-[2.6vh] md:h-[2vh] lg:h-[2.6vh] self-end w-[3vw] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i"
+                                        data-testid="icon-verified">
+                                        <g>
+                                            <path fill="currentColor"
+                                                d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <p class="font-normal text-gray-600 text-base">@UXMatters</p>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-white text-black py-1 h-[3.5vh] lg:h-[4.5vh] px-4 rounded-3xl font-[600] mt-2">Follow</button>
+                    </div>
+                    <p class="text-sm lg:text-base pl-[10.8vw] pt-1 lg:pt-0 md:pl-[6vw] lg:pl-[3.5vw] pr-4">Web magazine
+                        about user experience matters, providing insights and inspiration for the user experience
+                        community </p>
+                </a>
+                <a href="#" class="pl-5 hover:bg-[grey]/20 pt-4 pb-4 flex flex-col gap-0">
+                    <div class="flex flex-row justify-between pr-8">
+                        <div class="flex flex-row gap-2 items-center">
+                            <img src="./imgs/fabio.png" alt="GEORGE MOLLER"
+                                class="rounded-full w-[9vw] md:w-[5.2vw] lg:w-[3vw]">
+                            <div class="flex flex-col gap-0 text-blue-500">
+                                <div class="flex flex-row gap-0">
+                                    <p class="text-base text-white font-bold">George Moller</p>
+                                    <svg viewBox="0 0 22 22" aria-label="Verified account" role="img"
+                                        class="h-[2.6vh] md:h-[2vh] lg:h-[2.6vh] self-end w-[3vw] lg:w-[1.8vw] r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i"
+                                        data-testid="icon-verified">
+                                        <g>
+                                            <path fill="currentColor"
+                                                d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <p class="font-normal text-gray-600 text-base">@GeorgeMoller</p>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-white text-black py-1 h-[3.5vh] lg:h-[4.5vh] px-4 rounded-3xl font-[600] mt-2">Follow</button>
+                    </div>
+                    <p class="text-sm lg:text-base pl-[10.8vw] pt-1 lg:pt-0 md:pl-[6vw] lg:pl-[3.5vw] pr-4">Staff Front
+                        End Engineer at <span class="text-blue-500">@shopify</span>. Learning, building, and sharing my journey.</p>
+                </a>
+            </div>
+        </div>
+        <div class="rightbar flex flex-col gap-4 py-4 fixed top-0 left-[72vw] lg:flex hidden w-[30vw]">
+            <a href="#" class="focus:outline outline-blue-600 outline-offset-2 flex flex-row gap-3 border border-gray-600 pl-5 py-[0.2vh] rounded-3xl w-[23vw] text-gray-600">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-[1.5vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                    <g>
+                        <path fill="currentColor"
+                            d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z">
+                        </path>
+                    </g>
+                </svg>
+                <input type="text" name="search" id="search" placeholder="Search"
+                    class="focus:outline-none text-white  rounded-3xl w-[20vw] h-[5vh] bg-black">
+            </a>
+            <div class="flex flex-col w-[23vw] px-4 rounded-xl py-2 border border-gray-600 gap-2">
+                <div class="flex flex-row justify-between">
+                    <h3 class="text-lg md:text-xl font-bold">Today's News</h3>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                        class="w-[1.3vw] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1hjwoze r-12ym1je"
+                        style="color: rgb(239, 243, 244);">
+                        <g>
+                            <path fill="currentColor"
+                                d="M10.59 12L4.54 5.96l1.42-1.42L12 10.59l6.04-6.05 1.42 1.42L13.41 12l6.05 6.04-1.42 1.42L12 13.41l-6.04 6.05-1.42-1.42L10.59 12z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <a href="#" class="flex flex-col gap-2">
+                    <p class="text-lg lg:text-base font-bold mt-4">Google DeepMind Unveils Gemini 4 Argon for Complex AI
+                        Workflows</p>
+                    <div class="flex flex-row gap-1">
+                        <div class="flex flex-row">
+                            <img src="./imgs/sundarpichai.webp" alt="SUNDAR PICHAI"
+                                class="w-[6vw] h-[6vw] md:w-[4vw] md:h-[4vw] lg:w-[2vw] lg:h-[2vw] rounded-full z-40">
+                            <img src="./imgs/google.jpeg" alt="GOOGLE"
+                                class="w-[6vw] h-[6vw] md:w-[4vw] md:h-[4vw] lg:w-[2vw] lg:h-[2vw] rounded-2xl z-30 relative right-4">
+                            <img src="./imgs/adn.png" alt="ADN"
+                                class="w-[6vw] h-[6vw] md:w-[4vw] md:h-[4vw] lg:w-[2vw] lg:h-[2vw] rounded-full z-20 relative right-7">
+                        </div>
+                        <p class="text-gray-600 relative right-6">9 hours ago <b>·</b> News <b>·</b> 54.7k posts</p>
+                    </div>
+                </a>
+                <a href="#" class="flex flex-col gap-2">
+                    <p class="text-lg lg:text-base font-bold">India Names Teen Sensation Sooryavanshi in Asian Games
+                        Cricket Semis</p>
+                    <div class="flex flex-row gap-1">
+                        <div class="flex flex-row">
+                            <img src="./imgs/surya.jpeg" alt="SURYA"
+                                class="w-[6vw] h-[6vw] md:w-[4vw] md:h-[4vw] lg:w-[2vw] lg:h-[2vw] rounded-full z-40">
+                            <img src="./imgs/adn.png" alt="Adn"
+                                class="w-[6vw] h-[6vw] md:w-[4vw] md:h-[4vw] lg:w-[2vw] lg:h-[2vw] rounded-2xl z-30 relative right-4">
+                            <img src="./imgs/amazon.png" alt="Amazon"
+                                class="w-[6vw] h-[6vw] md:w-[4vw] md:h-[4vw] lg:w-[2vw] lg:h-[2vw] rounded-full z-20 relative right-7">
+                        </div>
+                        <p class="text-gray-600 relative right-6">Trending Now <b>·</b> Sports <b>·</b> 3.5k posts</p>
+                    </div>
+                </a>
+                <a href="#" class="flex flex-col gap-2">
+                    <p class="text-lg lg:text-base font-bold">Drishyam: The Conclusion Advance Surge Ahead of
+                        October 2 Release</p>
+                    <div class="flex flex-row gap-1">
+                        <div class="flex flex-row">
+                            <img src="./imgs/ajay.webp" alt="AJAY DEVGAN"
+                                class="w-[6vw] h-[6vw] md:w-[4vw] md:h-[4vw] lg:w-[2vw] lg:h-[2vw] rounded-full z-40">
+                            <img src="./imgs/surya.jpeg" alt="SURYA"
+                                class="w-[6vw] h-[6vw] md:w-[4vw] md:h-[4vw] lg:w-[2vw] lg:h-[2vw] rounded-2xl z-30 relative right-4">
+                            <img src="./imgs/adn.png" alt="ADN"
+                                class="w-[6vw] h-[6vw] md:w-[4vw] md:h-[4vw] lg:w-[2vw] lg:h-[2vw] rounded-full z-20 relative right-7">
+                        </div>
+                        <p class="text-gray-600 relative right-6">Trending Now <b>·</b> Entertainment <b>·</b> 48.1k
+                            posts</p>
+                    </div>
+                </a>
+            </div>
+            <div class="flex flex-col w-[23vw] px-4 rounded-xl py-2 border border-gray-600 gap-5">
+                <h3 class="text-lg md:text-xl font-bold">Who to Follow</h3>
+                <div class="flex flex-row justify-between">
+                    <a href="#" class="flex flex-row items-center gap-3">
+                        <img src="./imgs/laugh.png" alt="LAUGH" class="w-[3vw] h-[3vw] rounded-full">
+                        <div class="flex flex-col">
+                            <p class="text-base font-bold leading-[1.2rem]">DarryKrug <br>
+                                <span class="text-gray-600 font-normal">@yurydud</span>
+                            </p>
+                        </div>
+                    </a>
+                    <button
+                        class="self-center  bg-white text-black px-4 h-[4.8vh] w-[6vw] rounded-3xl font-[600]">Follow</button>
+                </div>
+                <div class="flex flex-row justify-between">
+                    <a href="#" class="flex flex-row items-center gap-3">
+                        <img src="./imgs/sundarpichai.webp" alt="ADN" class="w-[3vw] h-[3vw] rounded-full">
+                        <div class="flex flex-col">
+                            <p class="text-base font-bold leading-[1.2rem]">Sundar Pichai<br>
+                                <span class="text-gray-600 font-normal">@sundarpichai</span>
+                            </p>
+                        </div>
+                    </a>
+                    <button
+                        class="self-center  bg-white text-black px-4 h-[4.8vh] w-[6vw] rounded-3xl font-[600]">Follow</button>
+                </div>
+                <a href="#" class="text-blue-600">Show More</a>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
